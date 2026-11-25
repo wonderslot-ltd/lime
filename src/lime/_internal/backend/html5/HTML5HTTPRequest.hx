@@ -31,7 +31,8 @@ class HTML5HTTPRequest
 	private static var originHostname:String;
 	private static var originPort:String;
 	private static var originProtocol:String;
-	private static var requestLimit = 17;
+	//Codex: Keep the request concurrency used by the Wonderslot asset loaders.
+	private static var requestLimit = 12;
 	private static var requestQueue = new List<QueueItem>();
 	private static var supportsImageProgress:Null<Bool>;
 
